@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Ch7Arrays.iml" filepath="$PROJECT_DIR$/Ch7Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/APCS.iml" filepath="$PROJECT_DIR$/APCS.iml" />
     </modules>
   </component>
 </project>

@@ -1,3 +1,5 @@
+package Ch7Arrays;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
