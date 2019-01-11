@@ -8,21 +8,27 @@ import java.util.Scanner;
 
 public class PersonalityTest {
 
-    // This is a test.
+    // Testing 123!
     public static void main(String[] args) throws FileNotFoundException {
         Scanner console = new Scanner(System.in);
         System.out.print("Input file name: ");
         // Here we are importing the input file and checking whether it exists.
+        // "from" = file FROM which data is read (input), "to" = file TO which results are output.
         File from = new File(console.nextLine());
         while (!from.exists()) {
             System.out.print("File not found. Try again: ");
             from = new File(console.nextLine());
         }
         System.out.print("Output file name: ");
+        // The user then specifies the output file.
+        // There is no need to check whether it exists, as it can be created automatically as needed.
+        // If the output file already contains data, it is overwritten.
         File to = new File(console.nextLine());
         Scanner input = new Scanner(from);
         PrintStream output = new PrintStream(to);
+        // For each line of data in the input file...
         while (input.hasNextLine()) {
+            // Record the subject's name:
             output.println(input.nextLine() + ":");
             if (input.hasNextLine()) {
                 String responses = input.nextLine()
